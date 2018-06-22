@@ -66,4 +66,4 @@ const init = async () => {
 
 exports.reload = reload;
 init();
-bot.login(bot.config.token);
+bot.login(process.env.BOT_TOKEN);
