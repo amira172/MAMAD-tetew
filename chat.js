@@ -3,7 +3,7 @@ const nekoclient = require('nekos.life');
 const neko = new nekoclient();
 
 exports.run = async (bot, message, args) => {
-  if (!args[0]) return message.channel.send(".....");
+  if (!args[0]) return message.channel.send("hai");
   if (args[0] == "-owo") {
     const theChat = await neko.getSFWChat({
       text: args.join(" "),
