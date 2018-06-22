@@ -32,9 +32,9 @@ var reload = (message, cmd) => {
 }
 
 bot.config = require('./config.json');
-bot.commands = new Enmap();
-bot.aliases = new Enmap();
-bot.cdTime = new Enmap();
+bot.commands = new Enmap(x!);
+bot.aliases = new Enmap(x!);
+bot.cdTime = new Enmap(x!);
 bot.settings = new Enmap({
   provider: new EnmapLevel({
     name: "settings"
